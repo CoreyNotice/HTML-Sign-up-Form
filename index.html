@@ -12,23 +12,145 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
+         <!-- TODO: Set Action and Method Properties -->
+    <form action=".\html\HTML-Sign-up-Form\results.html" method="get"> 
+        <label for="lastname">Your Last Name</label>
+        <span class="required-field">*</span>
+        <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35">
             <div>
                 <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
+                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35">
                 <!-- TODO: Create a "lastname" input with type "text" -->
             </div>
+            
             <!-- TODO: Make fieldset and legend -->
+            <fieldset>
+                <legend>Your Contact Info</legend>
+                <label for="email">Your Email</label>
+                <span class="required-field">*</span>
+                <input type="text" id="email" name="email">
+          
             <!-- Todo: Email Input -->
             <!-- Todo: Street Address Input -->
+            <label for="Street Address">Street Address</label>
+            <span class="required-field">*</span>
+            <input type="text" id="Street Address" name="Street Address">
             <!-- Todo: City, State, and Zip Inputs -->
+            <label for="City">City</label>
+            <span class="required-field">*</span>
+            <input type="text" id="City" name="City">
+           <div>
+            <span class="required-field">*</span>
+            <select name="state"> 
+                
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CT">Connecticut</option>
+                <option value="CO">Colorado</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="IA">Iowa</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="MA">Massachussets</option>
+                <option value="MD">Maryland</option>
+                <option value="ME">Maine</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MO">Missouri</option>
+                <option value="MS">Mississippi</option>
+                <option value="MT">Montana</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="NE">Nebraska</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NV">Nevada</option>
+                <option value="NY">New York</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VA">Virginia</option>
+                <option value="VT">Vermont</option>
+                <option value="WA">Washington</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WV">West Virginia</option>
+                <option value="WY">Wyoming</option>
+            </select>
+        </div>
+            <label for="Zip">Zip</label>
+            <span class="required-field">*</span>
+            <input type="number" id="Zip" name="Zip"> 
+            <label for="Age">Age</label>
+            <input type="number" id="age" name="age" min="21" max="120">
+            <h5>Must be 21 or older to enter</h5>    
+        </fieldset>
 
             <!-- TODO: Second fieldset -->
-            <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
+            <fieldset>
+                <legend>Your Preferences</legend>
+                <h3>Choose your location</h3>
+                <span class="required-field">*</span>
+                <div>
+                    <input type="radio" id="aruba" name="location" value="Aruba" checked> 
+                    <label for="aruba">Aruba</label>
+                </div>
+                <div>
+                    <input type="radio" id="japan" name="location" value="Japan"> 
+                    <label for="japan">Japan</label>
+                </div>
+                <div>
+                    <input type="radio" id="reykjavik" name="location" value="Reykjavik"> 
+                    <label for="reykjavik">Reykjavik</label>
+                </div>
+                <div>
+                    <input type="radio" id="new-zealand" name="location" value="New Zealand"> 
+                    <label for="new-zealand">New Zealand</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <input type="color" id="What your favortie Color?" name="What your favortie Color?">
+                <span class="required-field">*</span>
+                <label for="What your favortie Color?">What your favortie Color?</label>
+            </fieldset>
+      
             <!-- TODO: Checkboxes for selecting extra add-ons -->
-            
-            <!-- TODO: Submit Button -->
+            <fieldset>
+              <div>
+                 <legend>Extra Add-ons</legend>
+                        <input type="checkbox" id="Sauna" name="Sauna">
+                              <label for="Sauna">Sauna</label>
+              </div>
+            <div>
+                <input type="checkbox" id="In-room hot tub" name="In-room hot tub">
+                 <label for="In-room hot tub">In-room hot tub</label>
+
+            </div>
+            <div>
+                <input type="checkbox" id="Room Service" name="Room Service">
+                 <label for="Room Service">Room Service</label>
+            </div>
+        </fieldset>
+         <input type="submit" id="Submit" name="Submit">
+          <label for="Submit"></label>
+          <span class="required-field">*</span>
+
         </form>
     </main>
     <footer>
